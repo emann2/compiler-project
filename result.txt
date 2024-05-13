@@ -1,0 +1,96 @@
+	1: reserved word: int
+	1: ID, name= gcd
+	1: (
+	1: reserved word: int
+	1: ID, name= u
+	1: ,
+	1: reserved word: int
+	1: ID, name= v
+	1: )
+	1: {
+	2: reserved word: if
+	2: (
+	2: ID, name= v
+	2: =
+	2: NUM, val= 0
+	2: )
+	3: reserved word: return
+	3: ID, name= u
+	3: ;
+	4: reserved word: else
+	5: reserved word: return
+	5: ID, name= gcd
+	5: (
+	5: ID, name= v
+	5: ,
+	5: ID, name= u
+	5: -
+	5: ID, name= u
+	5:  
+	5: ID, name= v
+	5: *
+	5: ID, name= v
+	5: )
+	5: ;
+	6: }
+	7: reserved word: int
+	7: ID, name= lcm
+	7: (
+	7: reserved word: int
+	7: ID, name= x
+	7: ,
+	7: reserved word: int
+	7: ID, name= y
+	7: )
+	7: {
+	8: reserved word: return
+	8: (
+	8: ID, name= x
+	8:  
+	8: ID, name= gcd
+	8: (
+	8: ID, name= x
+	8: ,
+	8: ID, name= y
+	8: )
+	8: )
+	8: *
+	8: ID, name= y
+	8: ;
+	9: }
+	11: reserved word: int
+	11: ID, name= main
+	11: (
+	11: reserved word: void
+	11: )
+	11: {
+	12: reserved word: int
+	12: ID, name= a
+	12: ;
+	12: reserved word: int
+	12: ID, name= b
+	12: ;
+	13: ID, name= a
+	13: :=
+	13: ID, name= input
+	13: (
+	13: )
+	13: ;
+	14: ID, name= b
+	14: :=
+	14: ID, name= input
+	14: (
+	14: )
+	14: ;
+	15: ID, name= output
+	15: (
+	15: ID, name= gcd
+	15: (
+	15: ID, name= a
+	15: ,
+	15: ID, name= b
+	15: )
+	15: )
+	15: ;
+	16: }
+	19: EOF

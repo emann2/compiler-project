@@ -1,0 +1,18 @@
+int gcd(int u, int v) {
+    if (v == 0) 
+        return u;
+    else 
+        return gcd(v,u-u/v*v);
+}
+int lcm(int x, int y) {
+    return (x / gcd(x, y)) * y;
+}
+
+int main(void) {
+    int a; int b;
+    a = input();
+    b = input();
+    output(gcd(a,b));
+}
+
+
